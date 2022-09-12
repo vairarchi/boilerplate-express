@@ -12,6 +12,8 @@ console.log("Hello World")
     res.sendFile(absolutePath);
   });
 
+  app.use("/public", express.static(__dirname + "/public"));
+
 
 
 
