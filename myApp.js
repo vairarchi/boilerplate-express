@@ -4,7 +4,7 @@ require("dotenv").config();
 
 console.log("Hello World");
 
-app.use(function (req, res, next) {
+app.use(function middleware(req, res, next) {
   console.log(req.method, " ", req.path, " - ", req.ip);
   next();
 });
